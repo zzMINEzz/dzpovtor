@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo" id="logo">Погода</div>
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav class="nav" id="nav-menu">
+            <ul>
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#about">Про нас</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#contact">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="weather">
+        <input type="text" class="weather-response" placeholder="Введіть місто" required>
+        <button type="button" class="weather-button">Отримати погоду</button>
+        <div class="weather-total"></div>
+    </div>
+    <div class="coment">
+        <h2>Ваш відгук</h2>
+        <textarea class="text__btn" id="comment-text" cols="30" rows="5" placeholder="Напишіть свій коментар"></textarea>
+        <input class="name__input" id="name-input" type="text" placeholder="Ваше ім'я" required>
+        <button class="button" id="send-comment">Відправити</button>
+        <div class="comments-list" id="comments-list"></div> 
+    </div>
+    <script src="script.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>

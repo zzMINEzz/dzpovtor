@@ -1,0 +1,101 @@
+
+
+body {
+    display: none; 
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.comments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    padding: 16px;
+    max-height: 400px;
+    overflow-y: auto; 
+  }
+  
+  .comments-list div,
+  .comments-list p {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 7px; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.575); 
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+    max-width: 500px;
+  }
+@media (min-width: 400px) and (max-width: 600px) {
+    body {
+        display: block; 
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    header {
+        background: #4682B4;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav {
+        display: none; 
+    }
+
+    .nav.active {
+        display: block; 
+    }
+
+    .weather, .coment {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .weather-response, .name__input, .text__btn {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 2px solid #87CEEB;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: border-color 0.3s ease;
+    }
+
+    .weather-response:focus, .name__input:focus, .text__btn:focus {
+        border-color: #4682B4;
+        outline: none;
+    }
+
+    .weather-button, .button {
+        background: #4682B4;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px; 
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }}
